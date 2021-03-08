@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Tasks",
+  "info": {
+    "name": "subtask",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Description": {
+      "type": "string",
+      "required": true
+    },
+    "done": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

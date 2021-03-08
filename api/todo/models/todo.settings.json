@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Todos",
+  "info": {
+    "name": "Todo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Done": {
+      "type": "boolean",
+      "default": false
+    },
+    "subtasks": {
+      "collection": "subtask"
+    }
+  }
+}
